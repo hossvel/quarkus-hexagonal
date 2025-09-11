@@ -1,4 +1,4 @@
-package com.hossvel.aplication.port.in.rest;
+package com.hossvel.adapter.in.rest;
 
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
