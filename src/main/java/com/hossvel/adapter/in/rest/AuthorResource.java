@@ -1,6 +1,6 @@
 package com.hossvel.adapter.in.rest;
 
-import com.hossvel.aplication.dto.RegisterAuthorDTO;
+import com.hossvel.aplication.dto.AuthorRequestDTO;
 import com.hossvel.aplication.port.in.IAuthorService;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.*;
@@ -22,7 +22,7 @@ public class AuthorResource {
     }
 
     @POST
-    public Response registerAuthor(RegisterAuthorDTO registerAuthorDto ) {
+    public Response registerAuthor(AuthorRequestDTO registerAuthorDto ) {
 
         return Response.status(Response.Status.CREATED).entity(iAuthorService.registerAuthor(registerAuthorDto)).build();
     }
